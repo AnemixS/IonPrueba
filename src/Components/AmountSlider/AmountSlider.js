@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import CircularSlider from '@fseehawer/react-circular-slider';
-import { ReactComponent as circularSvg } from '../../assets/icon/circle-progress-bar.svg';
-import CurrencyFormat from 'react-currency-format';
 
 import {
   Card,

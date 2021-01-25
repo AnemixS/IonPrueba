@@ -1,7 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import arrowLeft from '../../assets/icon/arrow-left.svg'
 
