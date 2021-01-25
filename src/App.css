@@ -1,38 +1,229 @@
-.App {
+@import url("https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 400; 600 & display = swap");
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+  background-color: #1ca1cb;
+  border-color: #1ca1cb;
+}
+
+*[class*="icon"] {
+  width: 24px;
+  height: 24px;
+  background-color: #1b3c59;
+}
+
+*[class*="icon"]:hover, *[class*="icon"]:active, *[class*="icon"].active {
+  background-color: #1ca1cb;
+}
+
+.icon-home {
+  -webkit-mask: url("assets/icon/home.svg");
+          mask: url("assets/icon/home.svg");
+}
+
+.icon-money-bag {
+  -webkit-mask: url("assets/icon/money-bag.svg");
+          mask: url("assets/icon/money-bag.svg");
+}
+
+.icon-star {
+  -webkit-mask: url("assets/icon/star.svg");
+          mask: url("assets/icon/star.svg");
+}
+
+.icon-tag {
+  -webkit-mask: url("assets/icon/tag.svg");
+          mask: url("assets/icon/tag.svg");
+}
+
+.icon-bell {
+  -webkit-mask: url("assets/icon/bell.svg");
+          mask: url("assets/icon/bell.svg");
+}
+
+.icon-credit-card {
+  -webkit-mask: url("assets/icon/credit-card.svg");
+          mask: url("assets/icon/credit-card.svg");
+}
+
+.text-purple {
+  color: #783183;
+}
+
+.text-purple-light {
+  color: #bb64c8;
+}
+
+.text-sky-blue {
+  color: #1ca1cb;
+}
+
+.has-nav {
+  padding-bottom: 60px;
+}
+
+.card-text {
+  font-size: 2rem;
+}
+
+.card {
+  -webkit-box-shadow: 0px -2px 7px -1px #acacac;
+          box-shadow: 0px -2px 7px -1px #acacac;
+}
+
+.background-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ECF7FB));
+  background-image: linear-gradient(to bottom, #fff, #ECF7FB);
+}
+
+header {
+  height: 150px;
+}
+
+header .card {
+  width: calc( 100% - 72px);
+  left: 36px;
+  bottom: -10%;
+  z-index: 9999;
+}
+
+header .card-title {
+  font-size: .8rem;
+}
+
+.main-nav {
+  padding: 1.2rem 1.5rem;
+  background: white;
+  -webkit-box-shadow: 0 -10px 20px 10px white;
+          box-shadow: 0 -10px 20px 10px white;
+  height: 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: solid 0.5px rgba(9, 22, 31, 0.3);
+}
+
+.img-user {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 39px;
+}
+
+nav {
+  height: 116px;
+  background-color: #783183;
+}
+
+nav .card {
+  width: calc( 100% - 72px);
+  left: 36px;
+  top: 90%;
+  z-index: 9999;
+  -webkit-box-shadow: 0px 5px 7px -1px #acacac;
+          box-shadow: 0px 5px 7px -1px #acacac;
+}
+
+nav .card .card-title {
+  font-size: .8rem;
+}
+
+nav .card .card-text {
+  font-size: 1.5rem;
+}
+
+nav .link-wrapper {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .link-wrapper .link-item img {
+  width: 20px;
+  margin: 0 auto .5rem;
+}
+
+nav .link-wrapper .link-item span {
+  font-size: .5rem;
+}
+
+.payment-data p {
+  font-size: .8rem;
+}
+
+.payment-data p b {
+  font-size: 1.12rem;
+}
+
+.payment-data button {
+  font-size: .75rem;
+}
+
+.info-wrapper span, .info-wrapper b {
+  font-size: .75rem;
+}
+
+.transactions-wrapper {
+  padding-top: 240px;
+}
+
+.transactions-wrapper h2 {
+  font-size: 1.75rem;
+}
+
+.transactions-wrapper h2 a {
+  font-size: .9rem;
+}
+
+.transactions-wrapper .table tr td:first-of-type {
+  vertical-align: middle;
+}
+
+.transactions-wrapper .table tr img {
+  width: 45px;
+}
+
+.payment-data {
+  top: 78px;
+}
+
+.payment-data p {
+  margin-bottom: 0px;
+}
+
+.payment-data .monthly-payment {
+  font-size: 0.75rem;
+}
+
+.payment-data .amount {
+  font-size: 1.5rem;
+  z-index: 9999;
+}
+
+.payment-data .a-month {
+  position: absolute;
+  left: calc(((100% - 67px)/2));
+  font-size: .875rem;
+}
+
+.payment-data .months {
+  position: absolute;
+  left: calc(((100% + 2.41px)/2));
+  font-size: .875rem;
+}
+
+.payment-data .rate {
+  font-size: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  position: relative;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  left: -12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

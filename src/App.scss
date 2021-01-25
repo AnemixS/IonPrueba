@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 400; 600 & display = swap');
+
+$blue: #1b3c59;
+$sky-blue: #1ca1cb; 
+$purple: #783183;
+$purple-light: #bb64c8;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-{
+  &primary{
+    background-color: $sky-blue;
+    border-color: $sky-blue;
+  } 
+}
+
+*[class*="icon"]{
+  width: 24px;
+  height: 24px;
+  background-color: $blue;
+  &:hover, &:active, &.active{
+    background-color: $sky-blue
+  }
+}
+
+.icon-{
+  &home{
+    mask: url("assets/icon/home.svg");
+  }
+  &money-bag{
+    mask: url("assets/icon/money-bag.svg");
+  }
+  &star{
+    mask: url("assets/icon/star.svg");
+  }
+  &tag{
+    mask: url("assets/icon/tag.svg");
+  }
+  &bell{
+    mask: url("assets/icon/bell.svg");
+  }
+  &credit-card{
+    mask: url("assets/icon/credit-card.svg");
+  }
+}
+
+.text-{
+  &purple{
+    color: $purple
+  }
+  &purple-light{
+    color: $purple-light
+  }
+  &sky-blue{
+    color: $sky-blue;
+  }
+}
+
+.has-nav{
+  padding-bottom: 60px;
+}
+
+.card-text{
+  font-size: 2rem
+}
+
+.card{
+  box-shadow: 0px -2px 7px -1px #acacac;
+}
+
+.background-gradient{
+  background-image: linear-gradient(to bottom, #fff, #ECF7FB);
+}
+
+header{
+  height: 150px;
+  .card{
+    width: calc( 100% - 72px );
+    left: 36px;
+    bottom: -10%;
+    z-index: 9999;
+  }
+  .card-title{
+    font-size: .8rem;
+  }
+}
+
+.main-nav{
+  padding: 1.2rem 1.5rem;
+  background: white;
+  box-shadow: 0 -10px 20px 10px white;
+  height: 65px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: solid 0.5px rgba(9, 22, 31, 0.3);
+}
+
+.img-user{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 39px;
+}
+
+nav{
+  height: 116px;
+  background-color: $purple;
+  .card{
+    width: calc( 100% - 72px );
+    left: 36px;
+    top: 90%;
+    z-index:9999;
+    box-shadow: 0px 5px 7px -1px #acacac;
+    .card-title{
+      font-size: .8rem;
+    }
+    .card-text{
+      font-size: 1.5rem;
+    }
+  }
+  .link-wrapper{
+    justify-content: space-evenly;
+    .link-item{
+      img{
+        width: 20px;
+        margin: 0 auto .5rem
+      }
+      span{
+        font-size: .5rem;
+      }
+    }
+  }
+}
+
+.payment-data{
+  p{
+    font-size: .8rem;
+    b{
+      font-size: 1.12rem;
+    }
+  }
+  button{
+    font-size: .75rem;
+  }
+}
+.info-wrapper{
+  span, b{
+    font-size: .75rem;
+  }
+
+}
+
+.transactions-wrapper{
+  padding-top: 240px;
+  h2{
+    font-size: 1.75rem;
+    a{
+      font-size: .9rem
+    }
+  }
+  .table{
+    tr{
+      td:first-of-type{
+        vertical-align: middle;
+      }
+      img{
+        width: 45px;
+      }
+    }
+  }
+}
+
+.payment-data{
+  top: 78px;
+  p{
+    margin-bottom: 0px;
+  }
+  .monthly-payment{
+    font-size: 0.75rem;
+  }
+  .amount{
+    font-size: 1.5rem;
+    z-index: 9999;
+  }
+  .a-month{
+    position: absolute;
+    left: calc(((100% - 67px)/2));
+    font-size: .875rem;
+  }
+  .months{
+    position: absolute;
+    left: calc(((100% + 2.41px)/2));
+    font-size: .875rem;
+  }
+  .rate{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+code {
+  position: relative;
+  font-size: 1rem;
+  color: #000 ;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  left: -12px
+};
