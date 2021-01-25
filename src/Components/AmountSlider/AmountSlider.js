@@ -44,8 +44,8 @@ function AmountSlider (props) {
     <p className="font-weight-bold">Selecciona tu plazo</p>
     <div className="slider-wrapper position-relative d-flex justify-content-center my-4">
       <CircularSlider
-        label="Tu pago mensual"
-        labelColor="#fff"
+        label="."
+        labelColor="#ecf7fb"
         valueColor="#000"
         valueFontSize="1.5rem"
         hideLabel="true"
